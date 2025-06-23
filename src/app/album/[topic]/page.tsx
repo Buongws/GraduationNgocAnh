@@ -1,4 +1,3 @@
-'use client';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -43,11 +42,7 @@ const topicData: Record<string, { label: string; images: { src: string; alt: str
   },
 };
 
-interface Props {
-  params: { topic: string };
-}
-
-export default function AlbumTopicPage({ params }: Props) {
+export default function AlbumTopicPage({ params }: any) {
   const topic = topicData[params.topic];
   if (!topic) return notFound();
 
