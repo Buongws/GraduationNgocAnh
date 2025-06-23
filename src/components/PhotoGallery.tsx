@@ -7,15 +7,15 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import friend1 from "../../public/assets/banbe.jpg";
-import friend2 from "../../public/assets/banbe1.jpg";
-import friend3 from "../../public/assets/banbe2.jpg";
-import friend4 from "../../public/assets/banbe3.jpg";
-import friend5 from "../../public/assets/banbe4.jpg";
-import friend6 from "../../public/assets/banbe5.jpg";
-import friend7 from "../../public/assets/banbe6.jpg";
-import e from "../../public/assets/06.jpg";
-import h from "../../public/assets/09.jpg";
+import friend1 from "../assets/banbe.jpg";
+import friend2 from "../assets/banbe1.jpg";
+import friend3 from "../assets/banbe2.jpg";
+import friend4 from "../assets/banbe3.jpg";
+import friend5 from "../assets/banbe4.jpg";
+import friend6 from "../assets/banbe5.jpg";
+import friend7 from "../assets/banbe6.jpg";
+import e from "../assets/06.jpg";
+import h from "../assets/09.jpg";
 
 const PhotoGallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

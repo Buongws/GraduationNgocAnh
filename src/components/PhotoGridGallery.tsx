@@ -3,38 +3,35 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-// Thay các import này bằng ảnh thật của bạn
-import img1 from "../../public/assets/069bf74e47d360ca4616e113e38add32.jpg";
-import img2 from "../../public/assets/70ca774ad1fb25035c804b5b3e9dab21.jpg";
-import img12 from "../../public/assets/IMG_2246.jpg";
-import img3 from "../../public/assets/b72362e68ec2b02f41b09a97dfa53c38.jpg";
+import img1 from "../assets/069bf74e47d360ca4616e113e38add32.jpg";
+import img2 from "../assets/70ca774ad1fb25035c804b5b3e9dab21.jpg";
+import img12 from "../assets/IMG_2246.jpg";
+import img3 from "../assets/b72362e68ec2b02f41b09a97dfa53c38.jpg";
 
-import img4 from "../../public/assets/Em5.jpg";
-import img5 from "../../public/assets/em.jpg";
-import img6 from "../../public/assets/em2.jpg";
-import img7 from "../../public/assets/em3.jpg";
-import img8 from "../../public/assets/em4.jpg";
-import img9 from "../../public/assets/Em5.jpg";
-import img10 from "../../public/assets/F651C632-222C-4BB7-AC7D-B0782178821F.jpg";
-import img11 from "../../public/assets/IMG_2248.jpg";
+import img4 from "../assets/Em5.jpg";
+import img5 from "../assets/em.jpg";
+import img6 from "../assets/em2.jpg";
+import img7 from "../assets/em3.jpg";
+import img8 from "../assets/em4.jpg";
+import img9 from "../assets/Em5.jpg";
+import img10 from "../assets/F651C632-222C-4BB7-AC7D-B0782178821F.jpg";
+import img11 from "../assets/IMG_2248.jpg";
 
-import img111 from "../../public/assets/1.jpg";
-import img222 from "../../public/assets/2.jpg";
-import img333 from "../../public/assets/3.jpg";
-import img444 from "../../public/assets/4.jpg";
-import img555 from "../../public/assets/5.jpg";
+import img111 from "../assets/1.jpg";
+import img222 from "../assets/2.jpg";
+import img333 from "../assets/3.jpg";
+import img444 from "../assets/4.jpg";
+import img555 from "../assets/5.jpg";
 
-
-import a from "../../public/assets/12.jpg";
-import b from "../../public/assets/13.jpg";
-import c from "../../public/assets/04.jpg";
-import d from "../../public/assets/05.jpg";
-import e from "../../public/assets/06.jpg";
-import f from "../../public/assets/07.jpg";
-import g from "../../public/assets/08.jpg";
-import h from "../../public/assets/01.jpg";
-import i from "../../public/assets/02.jpg";
-
+import a from "../assets/12.jpg";
+import b from "../assets/13.jpg";
+import c from "../assets/04.jpg";
+import d from "../assets/05.jpg";
+import e from "../assets/06.jpg";
+import f from "../assets/07.jpg";
+import g from "../assets/08.jpg";
+import h from "../assets/01.jpg";
+import i from "../assets/02.jpg";
 
 const images = [
   { id: 1, src: img1, alt: "Cat winking", aspect: "aspect-[3/4]" },
@@ -65,19 +62,21 @@ const images = [
   { id: 74, src: g, alt: "Ảnh 7" },
   { id: 8123, src: h, alt: "Ảnh 8" },
   { id: 955, src: i, alt: "Ảnh 9" },
-
-
 ];
 
 export default function PhotoGridGallery() {
-  const [selected, setSelected] = useState<null | typeof images[0]>(null);
+  const [selected, setSelected] = useState<null | (typeof images)[0]>(null);
 
   return (
     <section className="py-20 bg-gradient-to-br from-white via-blue-50 to-accent/10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-primary mb-4 drop-shadow-lg font-sans">Những kỉ niệm thanh xuân đi học của mình nè !</h2>
-          <p className="text-gray-600 font-medium">Click vào để xem rõ hơn nhaaa</p>
+          <h2 className="text-4xl font-extrabold text-primary mb-4 drop-shadow-lg font-sans">
+            Những kỉ niệm thanh xuân đi học của mình nè !
+          </h2>
+          <p className="text-gray-600 font-medium">
+            Click vào để xem rõ hơn nhaaa
+          </p>
         </div>
         <div className="columns-2 md:columns-4 gap-4 space-y-4">
           {images.map((img, idx) => (
@@ -109,7 +108,7 @@ export default function PhotoGridGallery() {
           >
             <div
               className="relative max-w-2xl w-full p-4"
-              onClick={e => e.stopPropagation()}
+              onClick={(e) => e.stopPropagation()}
             >
               <Image
                 src={selected.src}
@@ -131,4 +130,4 @@ export default function PhotoGridGallery() {
       </div>
     </section>
   );
-} 
+}

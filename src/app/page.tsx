@@ -11,8 +11,8 @@ import Image from "next/image";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 
-import Mainsection from "../../public/assets/IMG_2247.jpg";
-import background from "../../public/assets/IMG_2250.jpg";
+import Mainsection from "../assets/IMG_2247.jpg";
+import background from "../assets/IMG_2250.jpg";
 import PhotoGridGallery from "@/components/PhotoGridGallery";
 import Link from "next/link";
 

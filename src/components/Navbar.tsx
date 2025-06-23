@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import logo from "../../public/assets/logo.jpg";
+import logo from "../assets/logo.jpg";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -21,7 +21,7 @@ export default function Navbar() {
             className="rounded-2xl border-2 border-[#a6192e] bg-white shadow-glow transition-transform duration-300 hover:scale-105"
           />
         </div>
-      
+
         <div className="flex gap-6">
           {isAlbumPage ? (
             <Link
