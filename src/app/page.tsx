@@ -1,12 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
 import PhotoGallery from "@/components/PhotoGallery";
 import Countdown from "@/components/Countdown";
 import SocialSharing from "@/components/SocialSharing";
-import Navbar from "@/components/Navbar";
 import Confetti from "react-confetti";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import Image from "next/image";
