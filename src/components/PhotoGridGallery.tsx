@@ -2,67 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-import img1 from "../assets/069bf74e47d360ca4616e113e38add32.jpg";
-import img2 from "../assets/70ca774ad1fb25035c804b5b3e9dab21.jpg";
-import img12 from "../assets/IMG_2246.jpg";
-import img3 from "../assets/b72362e68ec2b02f41b09a97dfa53c38.jpg";
-
-import img4 from "../assets/Em5.jpg";
-import img5 from "../assets/em.jpg";
-import img6 from "../assets/em2.jpg";
-import img7 from "../assets/em3.jpg";
-import img8 from "../assets/em4.jpg";
-import img9 from "../assets/Em5.jpg";
-import img10 from "../assets/F651C632-222C-4BB7-AC7D-B0782178821F.jpg";
-import img11 from "../assets/IMG_2248.jpg";
-
-import img111 from "../assets/1.jpg";
-import img222 from "../assets/2.jpg";
-import img333 from "../assets/3.jpg";
-import img444 from "../assets/4.jpg";
-import img555 from "../assets/5.jpg";
-
-import a from "../assets/12.jpg";
-import b from "../assets/13.jpg";
-import c from "../assets/04.jpg";
-import d from "../assets/05.jpg";
-import e from "../assets/06.jpg";
-import f from "../assets/07.jpg";
-import g from "../assets/08.jpg";
-import h from "../assets/01.jpg";
-import i from "../assets/02.jpg";
-
-const images = [
-  { id: 1, src: img1, alt: "Cat winking", aspect: "aspect-[3/4]" },
-  { id: 2, src: img2, alt: "Two cats", aspect: "aspect-[3/4]" },
-  { id: 3, src: img3, alt: "Yellow house", aspect: "aspect-[3/4]" },
-  { id: 4, src: img4, alt: "White flowers", aspect: "aspect-[3/4]" },
-  { id: 5, src: img5, alt: "Ducks swimming", aspect: "aspect-[3/4]" },
-  { id: 6, src: img6, alt: "Sunset", aspect: "aspect-[3/4]" },
-  { id: 7, src: img7, alt: "Tree and sky", aspect: "aspect-[3/4]" },
-  { id: 8, src: img8, alt: "Tree and sky", aspect: "aspect-[3/4]]" },
-  { id: 9, src: img9, alt: "Tree and sky", aspect: "aspect-[3/4]" },
-  { id: 10, src: img10, alt: "Tree and sky", aspect: "aspect-[3/4]" },
-  { id: 11, src: img11, alt: "Tree and sky", aspect: "aspect-[3/4]" },
-  { id: 12, src: img12, alt: "Tree and sky", aspect: "aspect-[3/4]" },
-
-  { id: 13, src: img111, alt: "Tree and sky", aspect: "aspect-[3/4]" },
-  { id: 14, src: img222, alt: "Tree and sky", aspect: "aspect-[3/4]" },
-  { id: 15, src: img333, alt: "Tree and sky", aspect: "aspect-[3/4]" },
-  { id: 16, src: img444, alt: "Tree and sky", aspect: "aspect-[3/4]" },
-  { id: 17, src: img555, alt: "Tree and sky", aspect: "aspect-[3/4]" },
-
-  { id: 123, src: a, alt: "Ảnh 1" },
-  { id: 24123, src: b, alt: "Ảnh 2" },
-  { id: 3123, src: c, alt: "Ảnh 3" },
-  { id: 4123, src: d, alt: "Ảnh 4" },
-  { id: 5123, src: e, alt: "Ảnh 5" },
-  { id: 6123, src: f, alt: "Ảnh 6" },
-  { id: 74, src: g, alt: "Ảnh 7" },
-  { id: 8123, src: h, alt: "Ảnh 8" },
-  { id: 955, src: i, alt: "Ảnh 9" },
-];
+import images from "./photoGridImages";
 
 export default function PhotoGridGallery() {
   const [selected, setSelected] = useState<null | (typeof images)[0]>(null);

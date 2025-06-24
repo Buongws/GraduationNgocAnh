@@ -10,12 +10,14 @@ import Image from "next/image";
 import friend1 from "../assets/banbe.jpg";
 import friend2 from "../assets/banbe1.jpg";
 import friend3 from "../assets/banbe2.jpg";
+import jj from "../assets/lop4.jpg";
 import friend4 from "../assets/banbe3.jpg";
 import friend5 from "../assets/banbe4.jpg";
 import friend6 from "../assets/banbe5.jpg";
 import friend7 from "../assets/banbe6.jpg";
 import e from "../assets/06.jpg";
 import h from "../assets/09.jpg";
+
 
 const PhotoGallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -57,6 +59,9 @@ const PhotoGallery = () => {
     { id: 7, src: friend7, alt: "Graduation moment 7" },
     { id: 8, src: e, alt: "Graduation moment 7" },
     { id: 9, src: h, alt: "Graduation moment 7" },
+    { id: 10, src: jj, alt: "Graduation moment 7" },
+
+
   ];
 
   return (
