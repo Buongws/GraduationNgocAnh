@@ -39,7 +39,7 @@ const SocialSharing = () => {
                 </div>
                 <div className="flex items-center gap-3 text-lg font-medium">
                   <MapPinIcon className="w-6 h-6 text-accent" />
-                  <span>Km9 Đ. Nguyễn Trãi, P. Văn Quán, Nam Từ Liêm, Hà Nội</span>
+                  <span>Đ. Nguyễn Trãi, P. Văn Quán, Nam Từ Liêm, Hà Nội</span>
                 </div>
               </div>
             </div>

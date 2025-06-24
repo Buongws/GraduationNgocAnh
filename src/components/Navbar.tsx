@@ -10,7 +10,7 @@ export default function Navbar() {
   const isAlbumPage = pathname === "/album";
 
   return (
-    <nav className="w-full bg-red from-primary via-secondary to-accent border-b border-[#a6192e]/20 shadow-3xl rounded-b-2xl sticky top-0 z-50 transition-all duration-500">
+    <nav className="w-full bg-red from-primary via-secondary to-accent border-b border-[#a6192e]/20 shadow-3xl rounded-b-2xl  z-50 transition-all duration-500">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between bg-white">
         <div className="flex items-center gap-2">
           <Image
